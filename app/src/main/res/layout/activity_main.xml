@@ -4,15 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/purple_200"
+    tools:context=".activities.MainActivity" >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1091dp"
+        android:layout_height="1252dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome"
+        android:contentDescription="@string/todo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addNewLamp"
+        android:layout_width="139dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/fiells"
+        android:fontFamily="@font/sumana"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/add_new_lamp"
+        android:textColor="#000000"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/listOfLampsMain"
+        android:layout_width="139dp"
+        android:layout_height="44dp"
+        android:background="@drawable/fiells"
+        android:fontFamily="@font/sumana"
+        android:text="@string/list_of_lamps"
+        android:textColor="#000000"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:background="@drawable/fiels"
+        android:fontFamily="@font/sumana"
+        android:text="@string/about"
+        android:textColor="#000000"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/welcome"
+        android:layout_width="169dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="177dp"
+        android:fontFamily="@font/sumana"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/welcome"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="146dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336"
+        app:srcCompat="@drawable/lamp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="386dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/if_you_want_to_click_add_new_lamp_you_have_to_know_ip_of_your_lamp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
