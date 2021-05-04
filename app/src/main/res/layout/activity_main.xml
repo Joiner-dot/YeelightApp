@@ -106,10 +106,10 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="386dp"
+        android:layout_width="359dp"
         android:layout_height="38dp"
         android:gravity="center"
-        android:text="@string/if_you_want_to_click_add_new_lamp_you_have_to_know_ip_of_your_lamp"
+        android:text='If you want to click "Add new Lamp" you have to know IP of your Lamp'
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

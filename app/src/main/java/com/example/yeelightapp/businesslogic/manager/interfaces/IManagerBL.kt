@@ -1,15 +1,19 @@
 package com.example.yeelightapp.businesslogic.manager.interfaces
 
+import android.app.Activity
 import android.widget.SeekBar
+import android.widget.Switch
+import android.widget.ToggleButton
+import androidx.appcompat.widget.SwitchCompat
 import com.example.yeelightapp.lamps.Lamp
 
 interface IManagerBL {
 
-    fun addToDB(name: String?, ip: String?)
+    fun addToDB(name: String?, ip: String?):Boolean
 
     fun giveAllLamps(): List<Lamp>
 
-    fun connect(ip: String)
+    fun connect(activity: Activity, ip: String)
 
     fun changeRGB(red: Int, green: Int, blue: Int)
 
@@ -19,5 +23,5 @@ interface IManagerBL {
 
     fun turnOff()
 
-    fun setCurrentRGBB(vararg seekBar: SeekBar)
+    fun setCurrentRGBB(toggleButton: ToggleButton, vararg seekBar: SeekBar)
 }

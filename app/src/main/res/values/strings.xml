@@ -5,11 +5,18 @@
     <string name="list_of_lamps">List of Lamps</string>
     <string name="welcome">WELCOME</string>
     <string name="if_you_want_to_click_add_new_lamp_you_have_to_know_ip_of_your_lamp">If you want to click Add new Lampyou have to know IP of your Lamp</string>
-    <string name="todo">TODO</string>
     <string name="textview">TextView</string>
     <string name="select">Select</string>
     <string name="name_of_lamp">Name of Lamp</string>
     <string name="name">Name</string>
     <string name="ip">IP</string>
     <string name="choose_a_lamp">Choose A Lamp</string>
+    <string name="brightness">Brightness</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="adjust_the_lamp">Adjust the Lamp</string>
+    <string name="red">Red</string>
+    <string name="todo">TODO</string>
 </resources>

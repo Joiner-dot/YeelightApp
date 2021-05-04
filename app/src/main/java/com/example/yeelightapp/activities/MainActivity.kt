@@ -10,6 +10,7 @@ import com.example.yeelightapp.R
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar!!.hide();
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val listLamps: Button = findViewById(R.id.listOfLampsMain)

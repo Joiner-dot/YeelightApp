@@ -7,8 +7,10 @@ import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.Gravity
+import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.yeelightapp.R
 import com.example.yeelightapp.businesslogic.manager.ManagerBL
@@ -22,12 +24,17 @@ class ChoosingLampPage : Activity() {
         )
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        params.setMargins(0, 50, 0, 0)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.list_of_lamps)
+    }
+
+    override fun onResume() {
+        super.onResume()
         val managerBL = ManagerBL(baseContext)
         val linearLayout: LinearLayout = findViewById(R.id.listofLamps)
+        linearLayout.removeAllViews()
         val lamps = managerBL.giveAllLamps()
+        params.setMargins(0, 50, 0, 0)
         for (i in lamps.indices) {
             val textView = TextView(this)
             textView.text = lamps[i].name
@@ -36,7 +43,7 @@ class ChoosingLampPage : Activity() {
             textView.gravity = Gravity.CENTER
             textView.layoutParams = params
             textView.setTextColor(Color.parseColor("#000000"))
-            textView.setPadding(10,10,10,10)
+            textView.setPadding(10, 10, 10, 10)
             textView.background = ContextCompat.getDrawable(baseContext, R.drawable.border)
             textView.setOnClickListener {
                 val intent = Intent(this, MenuPage::class.java)
